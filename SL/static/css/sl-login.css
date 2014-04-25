@@ -1,0 +1,45 @@
+/*login*/
+.loginContent{
+    margin: auto;
+    width: 980px;
+    height: 514px;
+    /*border: 1px red solid;*/
+    background-image: url("/static/img/image/4.png");
+}
+/*登录框*/
+.loginUP{
+    width:240px;
+    height: 260px;
+    position: absolute;
+    margin: 88px 650px;
+    border: 1px gold solid;
+    background-color: #ffffff;
+}
+
+/*loginD*/
+.loginD-top{
+    width:238px;
+    height: 38px;
+    text-align: center;
+    padding-top: 8px;
+    background-color: lightgrey;
+}
+.loginD-content{
+    margin-top: 22px;
+}
+
+.loginD-content-l{
+    width:206px;
+    margin-left: 15px;
+    margin-top: 22px;
+}
+
+.loginD-bottom-left{
+    margin-left:25px;
+    float: left;
+}
+
+.loginD-bottom-right{
+    margin-left:100px;
+    float: left;
+}

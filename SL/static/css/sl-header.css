@@ -1,0 +1,72 @@
+/*headerD*/
+.header{
+    margin: auto;
+    width: 980px;
+    height: 88px;
+}
+.logo{
+    /*宽200，高60*/
+    margin-top: 15px;
+    width: 166px;
+    height: 60px;
+    background-image: url("../img/yklogo.png");
+    float: left;
+    background-repeat:no-repeat;
+}
+
+.login-menu-show{
+    margin-top: 30px;
+    margin-left: 5px;
+    width: 210px;
+    height: 30px;
+    float: left;
+}
+.menu-show-one{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    float: left;
+   cursor: pointer;
+}
+.menu-show-two{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 18px;
+    float: left;
+    cursor: pointer;
+}
+.loginSearch{
+    margin-top: 25px;
+    width: 250px;
+    height: 20px;
+    float: left;
+}
+
+.loginR{
+    margin-left:88px;
+    margin-top:30px;
+    width: 220px;
+    height: 30px;
+    float: left;
+}
+.loginR1{
+    margin-left:38px;
+    margin-top:2.1rem;
+    width: 280px;
+    height: 30px;
+    float: left;
+}
+.loginR-l{
+    width: 40px;
+    height: 30px;
+    float: left;
+}
+.loginR-r{
+    width: 40px;
+    height: 30px;
+    float: left;
+}
+.gan{
+    float:left;
+    margin-top:-2px;
+}

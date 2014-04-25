@@ -1,0 +1,63 @@
+<div class="col-md-12">
+    <div class="logo">
+    </div>
+    <div class="login-menu-show">
+        <div class="menu-show-one initialism " ng-click="noteLink()">
+            我的博客
+        </div>
+        <span class="gan">|</span>
+
+        <div class="menu-show-one initialism" ng-click="upload()">
+            上传
+        </div>
+        <span class="gan">|</span>
+
+        <div class="menu-show-two initialism">
+            帮助
+        </div>
+    </div>
+    <div class="loginSearch input-group input-group-sm">
+        <input type="text" class="form-control " ng-model="searchContent" placeholder="请输入搜索内容"
+               ng-keyup="searchByKey()">
+
+        <div class="input-group-addon btn ">
+            <small>搜索</small>
+        </div>
+    </div>
+    <div class="loginR" ng-show="loginShow">
+        <div ng-hide="islogining">
+            <div ng-click="showLogin()" class="loginR-l" style="cursor: pointer">
+                登录
+            </div>
+            <div ng-click="linkReg()" class="loginR-r" style="cursor: pointer">
+                注册
+            </div>
+        </div>
+        <div ng-hide="!islogining">
+            <span style="cursor: pointer;" ng-bind="username" ng-click="myhomelink()"></span>
+            <span style="cursor: pointer; margin-left: 2rem;" ng-click="logout()">注销 </span>
+        </div>
+    </div>
+    <!--<div class="loginR1" ng-show="!loginShow">-->
+        <!--<span class="input-group input-group-sm" style="float: left">-->
+            <!--<input type="text" class=" form-control" ng-model="user.username" placeholder="账户"-->
+                   <!--style="width: 9rem;">-->
+            <!--<input type="password" class="form-control" ng-model="user.password" placeholder="密码"-->
+                   <!--style="width: 9rem;">-->
+        <!--</span><span class=" btn btn-success btn-sm" style="float: left; margin-left: 1rem;"-->
+                     <!--ng-click="login()">登陆</span>-->
+    <!--</div>-->
+</div>
+<div ng-show="forSearch" style="position: absolute;left:0px; top:0px; 
+    width:16rem; height:100%;overflow:hidden; font-size:1.8rem; text-align:center;">
+
+    <div style=" font-size:2.4rem">[Task]</div>
+    <!--<div ng-repeat="task in searchLists.task" ng-bind="task.taskName" ng-click="tasklink(task.taskID)" style="cursor:pointer;text-align:left;"></div>
+    <div>[blog]</div>
+    <div ng-repeat="note in searchLists.note" ng-bind="note.noteTitle" style="cursor:pointer"></div>-->
+    <div class="list-group">
+        <a href="#" class="list-group-item" ng-repeat="task in searchLists.task" ng-bind="task.taskName"
+           ng-click="tasklink(task.taskID)"
+           style="cursor:pointer;text-align:left;"></a>
+    </div>
+</div>

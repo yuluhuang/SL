@@ -1,0 +1,13 @@
+<!--<div class="">
+    <a class=" active"><strong>我的作品</strong></a> <a class=""><strong>我的活动</strong></a>
+    <a class=""><strong>我的博客</strong></a> <a class=""><strong>我的作业</strong></a> <a class="">
+        <strong>我的搜藏</strong></a> <a class=""><strong>我的消息</strong></a> <a class=""><strong>
+            我的资料</strong></a>
+</div>-->
+
+
+<nav class="navbar navbar-default" role="navigation">
+      <ul class="nav navbar-nav">
+      <li style="font-size: 1.8rem;" ng-repeat="mylink in mylinks" ng-class="{active:mylink.active}"><a ng-href="{{mylink.link}}"><b ng-bind="mylink.name"></b></a></li>
+      </ul>
+</nav>

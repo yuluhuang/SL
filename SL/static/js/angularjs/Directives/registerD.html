@@ -1,0 +1,23 @@
+<form name="myForm">
+    <div>
+        <div class="registerD-top">注册</div>
+        <div class="col-xs-12 registerD-content">
+            <input type="text" class="form-control " required name="username" ng-model="user.username" placeholder="用户名">
+        </div>
+        <div class="col-xs-12 registerD-content">
+            <input type="password" class="form-control " required name="password" placeholder="密码" ng-model="user.password">
+        </div>
+        <div class="col-xs-12 registerD-content">
+            <input type="email" class="form-control " required name="email"  ng-model="user.email" placeholder="电子邮件">
+        </div>
+        <a class=" btn btn-success registerD-content-l" ng-click="registerClick()"
+           ng-disabled="!myForm.password.$valid||!myForm.username.$valid||!myForm.email.$valid">注册</a>
+
+        <div style="margin-top: 9px;">
+            <a class="register-login" href="login.html">
+                <small>登录</small>
+            </a>
+        </div>
+    </div>
+</form>
+

@@ -1,0 +1,40 @@
+/*register*/
+.registerContent{
+    margin: auto;
+    width: 980px;
+    height: 514px;
+    /*border: 1px red solid;*/
+    background-image: url("../img/image/4.png");
+}
+/*注册框*/
+.registerUP{
+    width:240px;
+    height: 320px;
+    position: absolute;
+    margin: 88px 650px;
+    border: 1px gold solid;
+    background-color: #ffffff;
+}
+
+/*registerD*/
+.registerD-top{
+    width:238px;
+    height: 38px;
+    text-align: center;
+    padding-top: 8px;
+    background-color: lightgrey;
+}
+.registerD-content{
+    margin-top: 22px;
+}
+
+.registerD-content-l{
+    width:206px;
+    margin-left: 15px;
+    margin-top: 22px;
+}
+.register-login{
+    margin-left: 180px;
+color:#68b318;
+    cursor: pointer;
+}

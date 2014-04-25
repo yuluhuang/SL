@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html ng-app="shareMyHomeApp">
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/static/img/logo.ico" />
+    <link href="/static/css/sl-header.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/sl-myhome.css" rel="stylesheet" type="text/css" />
+    <!--metro-->
+    <link rel="stylesheet" href="/static/js/metrojs/site.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/js/metrojs/dg-font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/js/metrojs/MetroJs.css" type="text/css"/>
+    <script src="/static/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/static/js/metrojs/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="/static/js/metrojs/global.js"></script>
+    <script type="text/javascript" src="/static/js/metrojs/ga.js"></script>
+    <script src="/static/js/metrojs/MetroJs.js" type="text/javascript"></script>
+    <!--metro-->
+    <!--bootstrap-->
+    <link rel="stylesheet" href="/static/js/bootstrap/bootstrap-3.1.1/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/js/bootstrap/bootstrap-3.1.1/css/bootstrap-theme.min.css"
+          type="text/css"/>
+    <script src="/static/js/bootstrap/bootstrap-3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--bootstrap-->
+    <script src="/static/js/angularjs/1.3.0/angular.min.js" type="text/javascript"></script>
+    <script src="/static/js/angularjs/1.3.0/angular-cookies.min.js" type="text/javascript"></script>
+    <!--    <script src="angularjs/1.3.0/angular-route.min.js" type="text/javascript"></script>-->
+    <script src="/static/js/angularjs/1.3.0/angular-resource.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/static/js/angularjs/App/shareMyHomeApp.js"></script>
+    <script type="text/javascript" src="/static/js/angularjs/Controllers/myHomeController.js"></script>
+    <script type="text/javascript" src="/static/js/angularjs/Filters/filter.js"></script>
+    <script type="text/javascript" src="/static/js/angularjs/Directives/headerDirective.js"></script>
+    <script type="text/javascript" src="/static/js/angularjs/Directives/footer.js"></script>
+    <script type="text/javascript" src="/static/js/angularjs/Directives/menuAD.js"></script>
+    <script type="text/javascript" src="/static/js/angularjs/Servers/loginServices.js"></script>
+    <script type="text/javascript" src="/static/js/angularjs/Servers/myHomeServices.js"></script>
+    <script type="text/javascript" src="/static/js/angularjs/Servers/baseurl.js"></script>
+</head>
+<body ng-controller="myHomeController">
+    <div class="header">
+        <div header-d>
+        </div>
+    </div>
+    <div>
+        <div class="center">
+            <div menu>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="col-md-12">
+            <div class="col-md-2 row">
+                <img ng-src="{{user.icon}}" style="height: 113px;" />
+            </div>
+            <div class="row col-md-9">
+                <textarea class="form-control" rows="5" ng-model="user.motto"></textarea>
+            </div>
+            <div class="col-md-1 btn btn-success" style="" ng-click="submitMotto()">
+                提交
+            </div>
+        </div>
+        <div class="containter col-md-12 row">
+            <div class="col-md-6 row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <label>
+                            活动详细信息
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="butn">
+                            <a class="btn " href="createtheme_1.html">[添加活动]</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 row" ng-repeat="huod in user.theme " style="padding-bottom:8px;">
+                    <div class="col-md-5" ng-click="getzuoqin(huod)">
+                        <img ng-src="{{huod.icon}}" style="height: 168px; width: 100%" />
+                    </div>
+                    <div class="col-md-7 row">
+                        <!--                        <div class="row">
+                            名称:<input ng-model="huod.themeName" class="form-control" style="width: 210px;" /></div>
+                        <div class="row">
+                            简介:<textarea ng-model="huod.remark" class="form-control" rows="4" style="width: 210px;"></textarea></div>
+                        <div class="row">
+                            <span class="btn btn-sm btn-success" ng-click="editTheme(huod)">编辑</span><span class="btn  btn-sm  btn-danger"
+                                ng-click="deleteTheme(huod)">删除</span>
+                        </div>-->
+                        <div class="row">
+                            名称:<span ng-model="huod.themeName" style="width: 210px;" ng-bind="huod.themeName"></span>
+                        </div>
+                        <div class="row">
+                            简介:<span ng-model="huod.remark" style="width: 210px;height:100px;" ng-bind="huod.remark"></span>
+                        </div>
+                        <div class="row" style="padding-top:89px;">
+                            <span class="btn btn-sm btn-success" ng-click="editTheme(huod)">编辑</span><span class="btn  btn-sm  btn-danger"
+                                                                                                           ng-click="deleteTheme(huod)">删除</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 row">
+                <div class="col-md-12 row">
+                    <div class="col-md-6">
+                        <label>
+                            作品详细信息
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="butn">
+                            <a class="btn" href="upload_1.html">[添加作品]</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 row" ng-repeat="task in user.theme.tasks ">
+                    <div class="col-md-5" ng-click="link(task)">
+                        <img ng-src="{{task.icon}}" style="height: 168px; width: 100%" />
+                    </div>
+                    <div class="col-md-7 row">
+                        <div class="row">
+                            名称:<span ng-bind="task.taskName"></span>
+                        </div>
+                        <div class="row">
+                            简介:<span ng-bind="task.remark"></span>
+                        </div>
+                        <div class="row" style="padding-top:89px;">
+                            <span class="btn btn-sm btn-success" ng-click="editTask(task)">编辑</span><span class="btn  btn-sm  btn-danger"
+                                                                                                          ng-click="deleteTask(task)">删除</span>
+                        </div>
+                        <!-- <div class="row">
+                             名称:<input ng-model="task.taskName" class="form-control" style="width: 210px;" /></div>
+                         <div class="row">
+                             简介:<textarea ng-model="task.remark" class="form-control" rows="4" style="width: 210px;"></textarea></div>
+                         <div class="row">
+                             <span class="btn btn-sm btn-success" ng-click="editTask(task)">编辑</span><span class="btn  btn-sm  btn-danger"
+                                 ng-click="deleteTask(task)">删除</span>
+                         </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer footer-menu></footer>
+</body>
+</html>
+

@@ -1,0 +1,1 @@
+﻿var app = angular.module("indexApp", ['share.header.directives', 'share.login.service', 'baseurl.service', 'share.footer.directives']);

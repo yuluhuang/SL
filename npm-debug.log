@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'Django' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'Django', null ]
+5 verbose cache add name=undefined spec="Django" args=["Django",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'Django',
+6 verbose parsed url   path: 'Django',
+6 verbose parsed url   href: 'Django' }
+7 silly lockFile b6c95e25-Django Django
+8 verbose lock Django /Users/Apple/.npm/b6c95e25-Django.lock
+9 silly lockFile b6c95e25-Django Django
+10 silly lockFile b6c95e25-Django Django
+11 verbose addNamed [ 'Django', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 108c141a-Django Django@
+14 verbose lock Django@ /Users/Apple/.npm/108c141a-Django.lock
+15 silly addNameRange { name: 'Django', range: '*', hasData: false }
+16 verbose url raw Django
+17 verbose url resolving [ 'https://registry.npmjs.org/', './Django' ]
+18 verbose url resolved https://registry.npmjs.org/Django
+19 info trying registry request attempt 1 at 19:43:23
+20 http GET https://registry.npmjs.org/Django
+21 http 404 https://registry.npmjs.org/Django
+22 silly registry.get cb [ 404,
+22 silly registry.get   { date: 'Mon, 21 Apr 2014 11:43:28 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     'cache-control': 'max-age=0',
+22 silly registry.get     'content-length': '52',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-v41-ASH, cache-hk90-HKG',
+22 silly registry.get     'x-cache': 'MISS, MISS',
+22 silly registry.get     'x-cache-hits': '0, 0',
+22 silly registry.get     'x-timer': 'S1398080607.685921669,VS0,VS330,VE338,VE449',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly lockFile 108c141a-Django Django@
+24 silly lockFile 108c141a-Django Django@
+25 error 404 'Django' is not in the npm registry.
+25 error 404 You should bug the author to publish it
+25 error 404
+25 error 404 Note that you can also install from a
+25 error 404 tarball, folder, or http url, or git url.
+26 error System Darwin 13.1.0
+27 error command "node" "/usr/local/bin/npm" "install" "Django"
+28 error cwd /Users/Apple/Downloads/python/SL
+29 error node -v v0.10.26
+30 error npm -v 1.4.3
+31 error code E404
+32 verbose exit [ 1, true ]
