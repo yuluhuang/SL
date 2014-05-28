@@ -25,7 +25,7 @@ app.directive("uploadify", function () {
                 }
             });
         },
-        templateUrl: './angularjs/Directives/uploadify.html',
+        templateUrl: '/static/js/angularjs/Directives/uploadify.html',
         scope: {
     },
     link: function ($scope, $element, $attrs) {

@@ -12,16 +12,27 @@ import json
 #settings.MEDIA_ROOT sl/sl
 #BASEDIR=os.path.dirname(__file__)#Return the directory name of pathname path.
 # Create your views here.
-response=HttpResponse()
-response['Content-type']="text/plain"
+
+'''
+'''
 @csrf_exempt
-#html
+def index(req):
+    return render_to_response('index.html',{})
+
+
+'''
+'''
+@csrf_exempt
 def loginhtml(req):
     return render_to_response('login.html',{})
 
+'''
+登录处理
+'''
 @csrf_exempt
-#登录处理
 def login(req):
+    response=HttpResponse()
+    response['Content-type']="text/plain"
     userId = req.POST.get('username')#从post上来的数据中取出
     password = req.POST.get('password')
     u=Users.objects.filter(userId__exact=userId,password__exact=password)
@@ -30,21 +41,45 @@ def login(req):
     '''
     if u:
         req.session['username']=userId
-        return HttpResponse('[{"user":['+Users.objects.get(Id="1").toJSON()+']}]', mimetype='application/javascript')#response
+        return HttpResponse('[{"code":"1","user":['+Users.objects.get(Id="1").toJSON()+']}]', mimetype='application/javascript')#response
     else:
         return HttpResponse(userId,mimetype='application/javascript')
 
+'''
+'''
+@csrf_exempt
+def logout(req):
+    response=HttpResponse()
+    response['Content-type']='text/plain'
+    try:
+        if 'username' in req.session:
+            del req.session['username']
+        response.write('[{"code":"logout"}]')
+    except KeyError:
+        response.write('[{"code":"0"}]')
 
+    return response
 
+'''
+note编写页面
+'''
+@csrf_exempt
+def notehtml(req):
+    return render_to_response('note.html',{})
+
+'''
+是否登录状态
+'''
 @csrf_exempt
 def islogin(req):
+    response=HttpResponse()
+    response['Content-type']="text/plain"
     if req.session['username']:
-        response.write('[{"login":"true"}]')
-        return response
-        #return HttpResponse('[{"login":"true"}]', mimetype='application/json')#response
-    else:
-        return render_to_response('login.html',{})
+        response.write('[{"code":"1","username":"'+req.session['username']+'"}]')
 
+    else:
+        response.write('[{"code":"0"}]')
+    return response
 @csrf_exempt
 def collecthtml(req):
     if req.method=='POST':
@@ -53,6 +88,10 @@ def collecthtml(req):
         #collection=Collection.objects.get(collectId="1")
         #return HttpResponse(collection.collectId, mimetype='application/javascript')#response
         return render_to_response('mycollect.html',{})
+
+
+
+
 
 @csrf_exempt
 def getcollect(req):

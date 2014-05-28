@@ -1,10 +1,10 @@
-﻿var app = angular.module("indexApp", ['share.header.directives', 'share.login.service', 'baseurl.service', 'share.footer.directives',
-'share.metroB.directives', 'share.metroA.directives', 'share.metroC.directives', 'ngRoute', 'ngSanitize']);
+﻿var app = angular.module("indexApp", ['share.header.directives',  'base.service', 'share.footer.directives',
+ 'ngRoute', 'ngSanitize']);
 
 app.config(function ($routeProvider) {
     $routeProvider.when("/", {
         controller: "indexShowCtrl",
-        templateUrl: "indexShow.html"
+        templateUrl: "/static/indexShow.html"
     });
     $routeProvider.when("/note/:noteid", {
         controller: "noteShowCtrl",

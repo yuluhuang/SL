@@ -2,7 +2,7 @@ var shareDirective = angular.module("share.menu.directive", []);
 shareDirective.directive('menu', function () {
     return {
         restrict: "A",
-        templateUrl: './angularjs/Directives/menuAD.html',
+        templateUrl: '/static/js/angularjs/Directives/menuAD.html',
         controller: function ($scope, $location) {
             $scope.mylinks = [
             { name: "我的小窝", link: "myhome.html#myhome", active: true, path: "/myhome" },

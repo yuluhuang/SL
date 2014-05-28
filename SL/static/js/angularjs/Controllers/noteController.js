@@ -1,8 +1,9 @@
 ﻿var app = angular.module("share.note.controller", []);
-app.controller("noteController", function ($scope, noteAPIService, loginAPIService) {
+app.controller("noteController", function ($scope, baseService) {
     $scope.note = {};
     $scope.saveNote = function () {
-        loginAPIService.islogin().success(function (data) {
+         baseService.post({flag:"islogin"},{},function(response){
+
             if (data[0].flag) {
                 $scope.note.content = encodeURIComponent(nicEditors.findEditor('areacontent').getContent());
 
@@ -21,7 +22,7 @@ app.controller("noteController", function ($scope, noteAPIService, loginAPIServi
                 }
                 });*/
                 var note = $scope.note;
-                noteAPIService.post({ flag: "note" }, note, function (response) {
+                baseService.post({ flag: "note" }, note, function (response) {
                     //console.info("11", response);
                     if (response[0].flag) {
                         alert("success");

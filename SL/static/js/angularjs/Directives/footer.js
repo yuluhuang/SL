@@ -4,7 +4,7 @@ app.directive("footerMenu", function () {
         restrict: 'AE',
         controller: function ($scope) {
         },
-        templateUrl: './angularjs/Directives/footer.html',
+        templateUrl: '/static/js/angularjs/Directives/footer.html',
         scope: {
         },
         link: function ($scope, $element, $attrs) {

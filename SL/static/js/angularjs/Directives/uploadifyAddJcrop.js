@@ -100,7 +100,7 @@ app.directive("uploadifyAddJcrop", function () {
                 }
             }
         },
-        templateUrl: './angularjs/Directives/uploadifyAddJcrop.html',
+        templateUrl: '/static/js/angularjs/Directives/uploadifyAddJcrop.html',
         scope: {
     },
     link: function ($scope, $element, $attrs) {
