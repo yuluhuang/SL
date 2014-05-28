@@ -2,30 +2,26 @@ var shareDirectives = angular.module('share.header.directives', ['ngCookies']);
 shareDirectives.directive("headerD", function ($timeout, loginAPIService, searchAPIService, $location, $cookieStore) {
     return {
         restrict: 'A',
-        templateUrl: '/static/js/angularjs/Directives/headerD.html',
+        templateUrl: './angularjs/Directives/headerD.html',
         link: function ($scope, $element, $attrs) {
-            console.info("dddddd", $location.path());
+            console.info("ddd", location.href);
             $scope.islogining = false;
-            $scope.forSearch = false; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-
-            //var loginService=new searchAPIService($scope.user);
-            searchAPIService.post({login:"islogin"},{},function(data){
-             console.info("ssss",data);
-                if (data) {
+            $scope.forSearch = false; //×ó±ßËÑË÷½á¹û
+            loginAPIService.islogin().success(function (data) {
+                console.info(data);
+                if (data[0].flag) {
                     $scope.islogining = true;
-                    //$scope.username = data[0].userName;
+                    $scope.username = data[0].userName;
                 }
                 else {
-                    console.info("ddddd", $location.path());
-                    if ($location.path() != "/login" && $location.path() != "/index" && $location.path() != "/fastregister") {
+                    console.info("ddd", $location.path());
+                    if ($location.path() != "/login" && $location.path() != "/index" && $location.path() != "/" && $location.path() != "/fastregister" && location.href.slice(-10) != "index.html" && location.href != "http://www.yuluhuang.com/") {
                         alert("qqqlogin");
                         $scope.islogining = false;
                         $scope.username = "";
                     }
                 }
             });
-
-
 
             $scope.upload = function () {
                 location.href = "upload_1.html";
@@ -57,7 +53,7 @@ shareDirectives.directive("headerD", function ($timeout, loginAPIService, search
 
                         $scope.username = data[0].userName;
                     } else {
-                        alert("ï¿½Ë»ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+                        alert("error");
                     }
                 });
             }

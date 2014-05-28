@@ -3,7 +3,7 @@ shareDirectives.directive("registerD", function (registerAPIService) {
     return {
         restrict: 'A',
         controller: 'registerController',
-        templateUrl: '/static/js/angularjs/Directives/registerD.html',
+        templateUrl: './angularjs/Directives/registerD.html',
         link: function ($scope, $element, $attrs) {
             //注册
             $scope.registerClick = function () {

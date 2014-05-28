@@ -1,31 +1,10 @@
 ﻿var app = angular.module('share.login.service', ['ngResource']);
 app.service('searchAPIService', function ($resource, $http, baseUrlService) {
     var baseurl = baseUrlService.get();
-    return $resource(baseurl + "/:login/",
+    return $resource(baseurl + "ashx/LoginHandler.ashx",
         {},
         {
-            post:
-            { method: "POST", params: {},
-            headers: {
-             "X-Requested-With": "XMLHttpRequest" ,
-            "content-type":"application/x-www-form-urlencoded;charset=UTF-8"
-            },
-            cache: true,
-            withCredentials: true,
-            isArray: true ,
-            transformRequest:function(obj) {
-                   var str = [];
-                        for(var p in obj){
-                            str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
-                            }
-                        return str.join("&");
-                     //return $.param(obj);
-             }
-            },
-            save:
-            {
-            method: "POST", params: {}, cache: true, withCredentials: true, isArray: false
-            }
+            post: { method: "POST", params: { flag: "", id: "" }, cache: true, withCredentials: true, isArray: true }
         }
         );
 });
@@ -38,12 +17,12 @@ app.service('loginAPIService', function ($http, baseUrlService) {
     loginAPI.loginInfo = function (user) {
         return $http({
             method: 'POST',
-            headers: { "X-Requested-With": "XMLHttpRequest" ,
-            "content-type":"application/x-www-form-urlencoded"},
-            url: baseurl + '/login/',
+            headers: { "X-Requested-With": "XMLHttpRequest" },
+            url: baseurl + 'ashx/LoginHandler.ashx',
             params: {
-            username:user.username,
-            password:user.password
+                flag: "login",
+                username: user.username,
+                password: user.password
             },
             withCredentials: true
         });
@@ -52,8 +31,9 @@ app.service('loginAPIService', function ($http, baseUrlService) {
         return $http({
             method: 'POST',
             headers: { "X-Requested-With": "XMLHttpRequest" },
-            url: baseurl + '/islogin/',
+            url: baseurl + 'ashx/LoginHandler.ashx',
             params: {
+                flag: "islogin"
             },
             withCredentials: true
         });
@@ -63,8 +43,9 @@ app.service('loginAPIService', function ($http, baseUrlService) {
         return $http({
             method: 'POST',
             headers: { "X-Requested-With": "XMLHttpRequest" },
-            url: baseurl + '/logout/',
+            url: baseurl + 'ashx/LoginHandler.ashx',
             params: {
+                flag: "logout"
             },
             withCredentials: true
         });

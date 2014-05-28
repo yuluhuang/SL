@@ -15,7 +15,7 @@ class Users(models.Model):
     introduction=models.TextField()
     motto=models.TextField()
     identity=models.CharField(max_length=10)
-    def __unicode__(self):
+    def __str__(self):
         return self.userId
     def toJSON(self):
         return json.dumps(dict([(attr, getattr(self, attr)) for attr in [f.name for f in self._meta.fields]]))
@@ -29,7 +29,7 @@ class Theme(models.Model):
     show=models.BooleanField()
     icon=models.CharField(max_length=50)
     point=models.BooleanField()
-    def __unicode__(self):
+    def __str__(self):
         return  '%s'%self.themeName
 
 class Task(models.Model):
@@ -42,7 +42,7 @@ class Task(models.Model):
     icon=models.CharField(max_length=50)
     hits=models.IntegerField()
     point=models.BooleanField()
-    def __unicode__(self):
+    def __str__(self):
         return  '%s'%self.taskName
 
 class  Collection(models.Model):
@@ -53,7 +53,7 @@ class  Collection(models.Model):
     url=models.CharField(max_length=100)
     time=models.CharField(max_length=13)
     taskId=models.IntegerField()
-    def __unicode__(self):
+    def __str__(self):
         return  '%s'%self.collectName
 
     def toJSON(self):
@@ -80,7 +80,7 @@ class Info(models.Model):
     read=models.BooleanField()
     time=models.CharField(max_length=13)
     userId=models.CharField(max_length=32)
-    def __unicode__(self):
+    def __str__(self):
         return  '%s'%self.infoTitle
 
 class Item(models.Model):
@@ -95,7 +95,7 @@ class Item(models.Model):
     introduce=models.TextField()
     sort=models.IntegerField()
     download=models.BooleanField()
-    def __unicode__(self):
+    def __str__(self):
         return  '%s'%self.oldName
 
 class Note(models.Model):
@@ -105,7 +105,7 @@ class Note(models.Model):
     noteTime=models.CharField(max_length=13)
     noteTag=models.CharField(max_length=10)
     userId=models.CharField(max_length=32)
-    def __unicode__(self):
+    def __str__(self):
         return  '%s'%self.noteTitle
 
 

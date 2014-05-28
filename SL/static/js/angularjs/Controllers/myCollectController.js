@@ -4,18 +4,18 @@ app.controller('myCollectController', function ($scope, myCollectAPIService, log
     $scope.collects = {};
     $scope.collect = {}; //用于修改收藏
     //如果是登录状态
-//var collectService=new myCollectAPIService();
-
-            myCollectAPIService.post({ collect: "getcollect" }, {}, function (response) {
-                if (response[0].collect) {
+    loginAPIService.islogin().success(function (data) {
+        if (data[0].flag) {
+            myCollectAPIService.post({ flag: "mycollect" }, {}, function (response) {
+                if (response[0]) {
                     console.info("sssss", response[0].collect);
-                    $scope.collects =response[0].collect;
-                     console.info($scope.collects);
+                    $scope.collects = response[0].collect;
                 } else {
                     alert("error");
                 }
             });
-
+        }
+    });
 
     //编辑状态
     $scope.showCollect = function (collect) {

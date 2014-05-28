@@ -7,8 +7,8 @@ app.directive("uploadifyAddJcrop", function () {
             //var _uploadify = document.getElementById("uploadify");
             $("#uploadify").uploadify({
                 'auto': false,
-                'swf': baseurl + '/static/js/uploadify/uploadify.swf', //上传所需的flash文件
-                'uploader': '/upload_img/', //后台处理文件
+                'swf': 'js/uploadify/uploadify.swf', //上传所需的flash文件
+                'uploader': 'ashx/upload_img.ashx', //后台处理文件
                 'queueID': 'fileQueue',
                 'queueSizeLimit': 1, //限制每次选择文件的个数
                 'multi': false, //是否多选
@@ -24,7 +24,7 @@ app.directive("uploadifyAddJcrop", function () {
                 'onUploadSuccess': function (file, data, response) {
                     var x = $.trim(data); // +"?" + new Date().getTime();
                     if (jcrop_api) jcrop_api.destroy();
-                    console.info("ssss",x);
+                    console.info(x);
 
                     $("#img_personal").removeAttr("src").attr("src", x);
                     $("#crop_preview").removeAttr("src").attr("src", x);
@@ -100,12 +100,12 @@ app.directive("uploadifyAddJcrop", function () {
                 }
             }
         },
-        templateUrl: '/static/js/angularjs/Directives/uploadifyAddJcrop.html',
+        templateUrl: './angularjs/Directives/uploadifyAddJcrop.html',
         scope: {
-        },
-        link: function ($scope, $element, $attrs) {
-        }
-    };
+    },
+    link: function ($scope, $element, $attrs) {
+    }
+};
 });
 
 

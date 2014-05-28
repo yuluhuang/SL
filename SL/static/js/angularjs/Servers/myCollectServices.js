@@ -1,10 +1,10 @@
 ﻿var app = angular.module('share.mycollect.service', ['ngResource']);
 app.service('myCollectAPIService', function ($http, $resource, baseUrlService) {
     var baseurl = baseUrlService.get();
-    return $resource(baseurl + "/:collect/",
+    return $resource(baseurl + "ashx/MyCollectHandler.ashx",
     {},
     {
-        post: { method: "POST", params: {}, cache: true, withCredentials: true, isArray: true }
+        post: { method: "POST", params: { flag: "", id: "" }, cache: true, withCredentials: true, isArray: true }
     }
     );
 });

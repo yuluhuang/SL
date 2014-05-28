@@ -38,15 +38,17 @@
             <span style="cursor: pointer; margin-left: 2rem;" ng-click="logout()">注销 </span>
         </div>
     </div>
-    <!--<div class="loginR1" ng-show="!loginShow">-->
-        <!--<span class="input-group input-group-sm" style="float: left">-->
-            <!--<input type="text" class=" form-control" ng-model="user.username" placeholder="账户"-->
-                   <!--style="width: 9rem;">-->
-            <!--<input type="password" class="form-control" ng-model="user.password" placeholder="密码"-->
-                   <!--style="width: 9rem;">-->
-        <!--</span><span class=" btn btn-success btn-sm" style="float: left; margin-left: 1rem;"-->
-                     <!--ng-click="login()">登陆</span>-->
-    <!--</div>-->
+    <div class="loginR1" ng-show="!loginShow">
+        <form name="myForm">
+            <span class="input-group input-group-sm" style="float: left">
+                <input type="text" class=" form-control" ng-model="user.username" placeholder="账户" required name="username"
+                       style="width: 9rem;">
+                <input type="password" class="form-control" ng-model="user.password" placeholder="密码" required name="password"
+                       style="width: 9rem;">
+            </span><span class=" btn btn-success btn-sm" style="float: left; margin-left: 1rem;" ng-disabled="!myForm.password.$valid||!myForm.username.$valid"
+                         ng-click="login()">登陆</span>
+        </form>
+    </div>
 </div>
 <div ng-show="forSearch" style="position: absolute;left:0px; top:0px; 
     width:16rem; height:100%;overflow:hidden; font-size:1.8rem; text-align:center;">

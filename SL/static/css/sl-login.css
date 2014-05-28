@@ -4,7 +4,7 @@
     width: 980px;
     height: 514px;
     /*border: 1px red solid;*/
-    background-image: url("/static/img/image/4.png");
+    background-image: url("../img/image/4.png");
 }
 /*登录框*/
 .loginUP{

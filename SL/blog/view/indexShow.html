@@ -1,0 +1,25 @@
+﻿<div class="header">
+    <div header-d>
+    </div>
+</div>
+<div class="content-wrapper tiles indigo" style="width: 2148px;">
+    <!--<section class="tile-group four-wide first">
+                    <h2>Welcome</h2>
+                    <div metro-a></div>
+                    <div metro-b></div>
+                    <div metro-c></div>
+                </section>-->
+    <section class="tile-group ten-wide first two-tall">
+                    <h2>Welcome</h2>
+
+                    <div class="live-tile two-wide exclude" ng-repeat="note in notes">
+                        <div ng-click="showNote(note)" style="cursor:pointer;">
+                        <!--    <p ng-bind-html="note.noteContent"></p>-->
+                            <p ng-bind="note.noteTitle"></p>
+                          
+                        </div>
+                    </div>
+
+                </section>
+</div>
+<footer footer-menu></footer>

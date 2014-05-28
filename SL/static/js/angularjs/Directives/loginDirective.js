@@ -3,7 +3,7 @@ shareDirectives.directive("loginD",function(loginAPIService){
     return {
         restrict: 'A',
         controller:'loginController',
-        templateUrl: '/static/js/angularjs/Directives/loginD.html',
+        templateUrl: './angularjs/Directives/loginD.html',
         link:function($scope, $element, $attrs){
         }
     };

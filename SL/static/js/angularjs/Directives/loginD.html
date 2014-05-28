@@ -1,4 +1,4 @@
-<form name="myForm"  method="post">
+<form name="myForm">
     <div>
         <div class="loginD-top">登录</div>
         <div class="col-xs-12 loginD-content">
@@ -7,8 +7,8 @@
         <div class="col-xs-12 loginD-content">
             <input type="password" class="form-control" required name="password" placeholder="密码" ng-model="user.password">
         </div>
-        <input type="submit" class=" btn btn-success loginD-content-l" ng-click="loginClick()"
-           ng-disabled="!myForm.password.$valid||!myForm.username.$valid" value="login">
+        <a class=" btn btn-success loginD-content-l" ng-click="loginClick()"
+           ng-disabled="!myForm.password.$valid||!myForm.username.$valid">登录</a>
 
         <div style="margin-top: 9px;">
             <a href="###" class="loginD-bottom-left"><small>忘记密码</small></a>

@@ -4,12 +4,10 @@ app.directive("footerMenu", function () {
         restrict: 'AE',
         controller: function ($scope) {
         },
-        templateUrl: '/static/js/angularjs/Directives/footer.html',
+        templateUrl: './angularjs/Directives/footer.html',
         scope: {
         },
         link: function ($scope, $element, $attrs) {
-
-
             var metroJs, appBar;
             // remove the default theme set for noscript and apply user theme
             $(document).ready(function () {
@@ -18,15 +16,14 @@ app.directive("footerMenu", function () {
                 metroJs.theme.loadDefaultTheme();
             });
 
-
             $(document).ready(function () {
                 var doBind = (typeof (window.bindAppBarKeyboard) === "undefined" || window.bindAppBarKeyboard);
                 // create the app bar  foot
                 appBar = $(".appbar").applicationBar({
                     applyTheme: false, // apply theme example below
                     preloadAltBaseTheme: true, // load both sets of images so there isn't a flicker when base theme is changed
-                    metroLightUrl: '/img/logo.png',
-                    metroDarkUrl: '/img/logo.png',
+                    metroLightUrl: 'img/image/3.jpeg',
+                    metroDarkUrl: 'img/image/3.jpeg',
                     bindKeyboard: doBind // bind the keyboard unless specified in an included script
                 });
                 // add the accents and base colors to the appbar
