@@ -46,5 +46,8 @@ note
 '''
 urlpatterns += patterns('',
     url(r'^notehtml/$','SL.blog.views.notehtml'),
+    url(r'^note$','SL.blog.views.note'),
+    url(r'^noteSearchByUsername$','SL.blog.views.noteSearchByUsername'),
+    url(r'^noteSearchByNoteId$','SL.blog.views.noteSearchByNoteId'),
 
 )

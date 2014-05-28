@@ -1,5 +1,5 @@
 ﻿var app = angular.module("indexApp", ['share.header.directives',  'base.service', 'share.footer.directives',
- 'ngRoute', 'ngSanitize']);
+ 'ngRoute', 'ngSanitize','ngCookies','ngResource']);
 
 app.config(function ($routeProvider) {
     $routeProvider.when("/", {
@@ -8,20 +8,21 @@ app.config(function ($routeProvider) {
     });
     $routeProvider.when("/note/:noteid", {
         controller: "noteShowCtrl",
-        templateUrl: "noteShowCtrl.html"
+        templateUrl: "/static/noteShowCtrl.html"
     });
    
 });
 
 
-app.controller('indexShowCtrl', function ($scope, $location, ylhService) {
-    ylhService.post({ flag: "noteSearch" }, function (response) {
+app.controller('indexShowCtrl', function ($scope, $location, baseService) {
+    baseService.post({ flag: "noteSearchByUsername" },{},function (response) {
         console.info("111", response);
-        if (response[0] && response[0].noteSearch) {
-            var aa = response[0].noteSearch[0].notes;
-            angular.forEach(aa, function (v, k) {
-                v.noteContent = decodeURIComponent(v.noteContent);
-            });
+        if (response[0] && response[0].code) {
+            var aa = response[0].notes;
+            /*angular.forEach(aa, function (v, k) {
+            console.info(v.fields.noteContent);
+                v.fields.noteContent = decodeURIComponent(v.fields.noteContent);
+            });*/
             $scope.notes = aa;
         }
     });
@@ -29,26 +30,22 @@ app.controller('indexShowCtrl', function ($scope, $location, ylhService) {
 
     $scope.showNote = function (note) {
         console.info(note);
-        $location.path("note/" + note.noteID);
+        $location.path("note/" + note.pk);
         $scope.blog = note;
     }
 });
 
 
-app.controller('noteShowCtrl', function ($scope, $location, ylhService, $routeParams) {
-    var noteid = $routeParams.noteid;
-    console.info("noteid=", noteid);
-    ylhService.post({ flag: "noteSearch" }, function (response) {
+app.controller('noteShowCtrl', function ($scope, $location, baseService, $routeParams) {
+    $scope.note={};
+    $scope.note.id = $routeParams.noteid;
+    var note=$scope.note;
+    baseService.post({ flag: "noteSearchByNoteId" },note, function (response) {
         console.info("111", response);
-        if (response[0] && response[0].noteSearch) {
-            var notes = response[0].noteSearch[0].notes;
-            angular.forEach(notes, function (v, k) {
-                if (v.noteID == noteid) {
-                    v.noteContent = decodeURIComponent(v.noteContent);
-                    console.info(v.noteContent);
-                    $scope.myblog = v;
-                }
-            });
+        if (response[0] && response[0].code) {
+            n = response[0].note[0].fields;
+            n.noteContent = decodeURIComponent(n.noteContent);
+            $scope.myblog = n;
         }
     });
     $scope.backIndex = function () {

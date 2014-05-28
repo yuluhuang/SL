@@ -1,4 +1,4 @@
-var shareDirectives = angular.module('share.header.directives', ['ngCookies']);
+var shareDirectives = angular.module('share.header.directives', []);
 shareDirectives.directive("headerD", function ($timeout,baseService, $location, $cookieStore) {
     return {
         restrict: 'A',

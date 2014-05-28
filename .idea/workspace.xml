@@ -23,46 +23,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="headerDirective.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Directives/headerDirective.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="12" selection-start="470" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SL/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="5" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.0" vertical-offset="598" max-vertical-offset="2880">
+            <state line="245" column="46" selection-start="7455" selection-end="7455" vertical-scroll-proportion="-13.5" vertical-offset="3324" max-vertical-offset="3810">
+              <folding>
+                <element signature="e#14#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexApp.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/App/indexApp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="7" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.78305787" vertical-offset="356" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myNoteController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Controllers/myNoteController.js">
+      <file leaf-file-name="note.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SL/blog/view/note.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="162" selection-end="220" vertical-scroll-proportion="-2.3076923" vertical-offset="0" max-vertical-offset="1005">
+            <state line="47" column="10" selection-start="2811" selection-end="2811" vertical-scroll-proportion="-9.583333" vertical-offset="475" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noteController.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Controllers/noteController.js">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SL/blog/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="27" selection-start="962" selection-end="962" vertical-scroll-proportion="0.67542213" vertical-offset="0" max-vertical-offset="615">
+            <state line="101" column="10" selection-start="3679" selection-end="3685" vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="2145">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myinfos.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SL/blog/view/myinfos.html">
+      <file leaf-file-name="headerDirective.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Directives/headerDirective.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="72" selection-start="2251" selection-end="2251" vertical-scroll-proportion="-12.5" vertical-offset="195" max-vertical-offset="1785">
+            <state line="0" column="65" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SL/blog/view/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="15" selection-start="2006" selection-end="2006" vertical-scroll-proportion="-8.125" vertical-offset="255" max-vertical-offset="765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="headerD.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Directives/headerD.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="12.5" vertical-offset="300" max-vertical-offset="1050">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexShow.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SL/static/indexShow.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="14" selection-start="378" selection-end="378" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
@@ -71,19 +100,10 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SL/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="46" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="825">
+            <state line="49" column="69" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="870">
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="note.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SL/blog/view/note.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="51" selection-start="3765" selection-end="3765" vertical-scroll-proportion="-19.0" vertical-offset="55" max-vertical-offset="1140">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -98,8 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SL/static/js/angularjs/App/shareMyCollectApp.js" />
-        <option value="$PROJECT_DIR$/SL/static/js/angularjs/App/shareMyDetailsApp.js" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/App/shareMyHomeApp.js" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/App/shareMyInfoApp.js" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/App/shareMyNoteApp.js" />
@@ -132,23 +150,25 @@
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/Directives/uploadify.js" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/Directives/uploadifyAddJcrop.js" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/Directives/footer.js" />
-        <option value="$PROJECT_DIR$/SL/static/js/angularjs/Servers/baseService.js" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/Servers/loginServices.js" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/Controllers/loginController.js" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/Directives/loginDirective.js" />
-        <option value="$PROJECT_DIR$/SL/static/js/angularjs/Directives/headerDirective.js" />
-        <option value="$PROJECT_DIR$/SL/blog/models.py" />
         <option value="$PROJECT_DIR$/SL/settings.py" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/Directives/footer.html" />
-        <option value="$PROJECT_DIR$/SL/urls.py" />
-        <option value="$PROJECT_DIR$/SL/blog/views.py" />
-        <option value="$PROJECT_DIR$/SL/static/js/angularjs/App/shareNoteApp.js" />
-        <option value="$PROJECT_DIR$/SL/static/js/angularjs/App/indexApp.js" />
-        <option value="$PROJECT_DIR$/SL/blog/view/index.html" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/Controllers/myNoteController.js" />
         <option value="$PROJECT_DIR$/SL/blog/view/note.html" />
         <option value="$PROJECT_DIR$/SL/static/js/nicEdit/nicEdit.js" />
         <option value="$PROJECT_DIR$/SL/static/js/angularjs/Controllers/noteController.js" />
+        <option value="$PROJECT_DIR$/SL/static/js/angularjs/Directives/headerDirective.js" />
+        <option value="$PROJECT_DIR$/SL/static/js/angularjs/App/shareCreateThemeOneApp.js" />
+        <option value="$PROJECT_DIR$/SL/urls.py" />
+        <option value="$PROJECT_DIR$/SL/blog/view/index.html" />
+        <option value="$PROJECT_DIR$/SL/static/js/angularjs/App/shareNoteApp.js" />
+        <option value="$PROJECT_DIR$/SL/blog/models.py" />
+        <option value="$PROJECT_DIR$/SL/static/js/angularjs/Servers/baseService.js" />
+        <option value="$PROJECT_DIR$/SL/static/indexShow.html" />
+        <option value="$PROJECT_DIR$/SL/blog/views.py" />
+        <option value="$PROJECT_DIR$/SL/static/js/angularjs/App/indexApp.js" />
       </list>
     </option>
   </component>
@@ -338,7 +358,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Directives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -571,20 +651,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/App/shareRegisterApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="84" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/App/shareUploadFourApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="103" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/App/shareUploadOneApp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="102" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
@@ -623,13 +689,6 @@
     <entry file="file://$PROJECT_DIR$/SL/blog/view/fastregister.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="83" selection-start="2549" selection-end="2549" vertical-scroll-proportion="-16.875" vertical-offset="135" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SL/static/indexShow.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
@@ -760,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Servers/baseService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="56" selection-start="102" selection-end="102" vertical-scroll-proportion="0.029411765" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Directives/menuAD.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="33" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
@@ -778,15 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="25" selection-start="1552" selection-end="1560" vertical-scroll-proportion="-10.083333" vertical-offset="133" max-vertical-offset="870">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SL/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="11" selection-start="3789" selection-end="3789" vertical-scroll-proportion="0.0" vertical-offset="1204" max-vertical-offset="2160">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -825,20 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Controllers/loginController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.05882353" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/App/indexApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="65" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/App/shareLoginApp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.030181086" vertical-offset="0" max-vertical-offset="497">
@@ -853,54 +882,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Directives/headerDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="470" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SL/blog/view/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="94" selection-start="2375" selection-end="2375" vertical-scroll-proportion="0.9072581" vertical-offset="45" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SL/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="5" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.0" vertical-offset="598" max-vertical-offset="2880">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SL/static/js/nicEdit/nicEdit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="27" selection-start="7148" selection-end="7148" vertical-scroll-proportion="0.3319838" vertical-offset="286" max-vertical-offset="2010">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SL/blog/view/note.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="51" selection-start="3765" selection-end="3765" vertical-scroll-proportion="-19.0" vertical-offset="55" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SL/blog/view/myinfos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="72" selection-start="2251" selection-end="2251" vertical-scroll-proportion="-12.5" vertical-offset="195" max-vertical-offset="1785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SL/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="46" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="825">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,23 +896,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/App/shareNoteApp.js">
+    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Controllers/myNoteController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="72" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+        <state line="4" column="0" selection-start="162" selection-end="220" vertical-scroll-proportion="0.1183432" vertical-offset="0" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Controllers/myNoteController.js">
+    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Controllers/loginController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="162" selection-end="220" vertical-scroll-proportion="-2.3076923" vertical-offset="0" max-vertical-offset="1005">
+        <state line="2" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/blog/view/myinfos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="72" selection-start="2251" selection-end="2251" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/App/shareCreateThemeOneApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="99" selection-start="231" selection-end="244" vertical-scroll-proportion="0.030181086" vertical-offset="0" max-vertical-offset="497">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Controllers/noteController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="27" selection-start="962" selection-end="962" vertical-scroll-proportion="0.67542213" vertical-offset="0" max-vertical-offset="615">
+        <state line="5" column="32" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/App/shareNoteApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="55" selection-start="154" selection-end="154" vertical-scroll-proportion="0.029411765" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Directives/headerDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="65" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/static/indexShow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="378" selection-end="378" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="69" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="870">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Directives/headerD.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="12.5" vertical-offset="300" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/blog/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="15" selection-start="2006" selection-end="2006" vertical-scroll-proportion="-8.125" vertical-offset="255" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="10" selection-start="3679" selection-end="3685" vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="2145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/Servers/baseService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="8" selection-start="586" selection-end="586" vertical-scroll-proportion="0.47058824" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/blog/view/note.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="10" selection-start="2811" selection-end="2811" vertical-scroll-proportion="-9.583333" vertical-offset="475" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="245" column="46" selection-start="7455" selection-end="7455" vertical-scroll-proportion="-13.5" vertical-offset="3324" max-vertical-offset="3810">
+          <folding>
+            <element signature="e#14#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SL/static/js/angularjs/App/indexApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="7" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.78305787" vertical-offset="356" max-vertical-offset="885">
           <folding />
         </state>
       </provider>

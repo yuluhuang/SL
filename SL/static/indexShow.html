@@ -10,16 +10,16 @@
                     <div metro-c></div>
                 </section>-->
     <section class="tile-group ten-wide first two-tall">
-                    <h2>Welcome</h2>
+        <h2>Welcome</h2>
 
-                    <div class="live-tile two-wide exclude" ng-repeat="note in notes">
-                        <div ng-click="showNote(note)" style="cursor:pointer;">
-                        <!--    <p ng-bind-html="note.noteContent"></p>-->
-                            <p ng-bind="note.noteTitle"></p>
-                          
-                        </div>
-                    </div>
+        <div class="live-tile two-wide exclude" ng-repeat="note in notes">
+            <div ng-click="showNote(note)" style="cursor:pointer;">
+                <!--    <p ng-bind-html="note.noteContent"></p>-->
+                <p ng-bind="note.fields.noteTitle"></p>
 
-                </section>
+            </div>
+        </div>
+
+    </section>
 </div>
 <footer footer-menu></footer>

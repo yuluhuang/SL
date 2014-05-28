@@ -60,12 +60,7 @@ def logout(req):
 
     return response
 
-'''
-note编写页面
-'''
-@csrf_exempt
-def notehtml(req):
-    return render_to_response('note.html',{})
+
 
 '''
 是否登录状态
@@ -80,6 +75,15 @@ def islogin(req):
     else:
         response.write('[{"code":"0"}]')
     return response
+
+'''
+note编写页面
+'''
+@csrf_exempt
+def notehtml(req):
+    return render_to_response('note.html',{})
+
+
 @csrf_exempt
 def collecthtml(req):
     if req.method=='POST':
@@ -190,6 +194,56 @@ def cutimage(request):
     return response
 
 
+'''
+post note
+'''
+@csrf_exempt
+def note(req):
+    response=HttpResponse()
+    response['Content-type']="text/plain"
+    if req.method=='POST' and req.session["username"]:
+        try:
+            content=str(req.POST.get('content',''))
+            tag=str(req.POST.get('tag',''))
+            time=str(req.POST.get('time',''))
+            title=str(req.POST.get('title',''))
+            url=str(req.POST.get('url',''))
+            n=Note(noteTitle=title,noteUrl=url,noteContent=content,noteTime=time,noteTag=tag,userId=req.session['username'])
+            n.save()
+            response.write('[{"code":"1"}]')
+        except Exception:
+            response.write('[{"code":"0"}]')
+    return response
+
+'''
+noteSearchByUsername
+'''
+@csrf_exempt
+def noteSearchByUsername(req):
+    response=HttpResponse()
+    response['Content-type']="text/plain"
+    if req.method=='POST' and req.session["username"]:
+        try:
+            notes=Note.objects.filter(userId__exact=req.session['username'])
+            response.write('[{"code":"1","notes":'+serializers.serialize("json", notes)+'}]')
+        except Exception:
+            response.write('[{"code":"'+Exception+'"}]')
+    return response
 
 
 
+'''
+noteSearchByNoteId
+'''
+@csrf_exempt
+def noteSearchByNoteId(req):
+    response=HttpResponse()
+    response['Content-type']="text/plain"
+    if req.method=='POST' and req.session["username"]:
+        try:
+            noteid=str(req.POST.get('id',''))
+            note=Note.objects.filter(noteId__exact=noteid)
+            response.write('[{"code":"1","note":'+serializers.serialize("json", note)+'}]')
+        except Exception:
+            response.write('[{"code":'+Exception+'}]')
+    return response
