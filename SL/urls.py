@@ -49,5 +49,22 @@ urlpatterns += patterns('',
     url(r'^note$','SL.blog.views.note'),
     url(r'^noteSearchByUsername$','SL.blog.views.noteSearchByUsername'),
     url(r'^noteSearchByNoteId$','SL.blog.views.noteSearchByNoteId'),
+    url(r'^splice','SL.blog.views.splice'),
+
+)
+'''
+tel
+'''
+urlpatterns += patterns('',
+    url(r'^showTel$','SL.blog.views.showTel'),
+    url(r'^showtelhtml/$','SL.blog.views.showtelhtml'),
+
+)
+'''
+spiderIp
+'''
+urlpatterns += patterns('',
+    url(r'^spiderIp$','SL.blog.views.spiderIp'),
+
 
 )

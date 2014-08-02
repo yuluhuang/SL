@@ -111,6 +111,32 @@ class Note(models.Model):
 
 
 
+class Tel(models.Model):
+    telId=models.AutoField(primary_key=True)
+    text=models.CharField(max_length=150 , blank=True)
+    telName=models.CharField(max_length=30,blank=True)
+    telContent=models.CharField(max_length=20,blank=True)
+    code=models.CharField(max_length=10,blank=True)
+    def __str__(self):
+        return '%s'%self.telId
+
+
+
+class Nu(models.Model):
+    NId=models.AutoField(primary_key=True)
+    NT=models.CharField(max_length=10)
+    def __str__(self):
+        return '%s'%self.NId
+
+
+class ProxyIp(models.Model):
+    Id=models.AutoField(primary_key=True)
+    ip=models.CharField(max_length=22,blank=True)
+    time=models.CharField(max_length=20,blank=True)
+    addr=models.CharField(max_length=10,blank=True)
+    def __str__(self):
+        return '%s'%self.ip
+
 
 
 

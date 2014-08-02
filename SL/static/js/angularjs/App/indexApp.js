@@ -33,6 +33,8 @@ app.controller('indexShowCtrl', function ($scope, $location, baseService) {
         $location.path("note/" + note.pk);
         $scope.blog = note;
     }
+
+
 });
 
 

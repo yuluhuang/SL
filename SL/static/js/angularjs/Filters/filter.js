@@ -5,3 +5,11 @@ app.filter("imgpath", function () {
     };
     return userInfoFilter;
 });
+
+app.filter("unescape", function () {
+    var userInfoFilter = function (input) {
+    //console.log(input);
+            return eval("'"+input+"'")
+    };
+    return userInfoFilter;
+});
